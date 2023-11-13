@@ -1,0 +1,50 @@
+int i = 0;
+while (i <= 10)
+{
+    Console.WriteLine(i);
+    i++;
+}
+
+int j = 10;
+while (j > 0)
+{
+    Console.WriteLine(j);
+    j--;
+}
+
+
+for (int i = 0; i < 4; i++)
+{
+    Console.WriteLine("*****");
+}
+
+string rev = "ahsan";
+
+Console.WriteLine("Enter a String >> ");
+string str = Console.ReadLine();
+
+string revStr = new string(str.Reverse().ToArray());
+Console.WriteLine("Reverse of String >>>" + revStr);
+
+Console.Write("Enter the number of rows for the triangle: ");
+int numRows = int.Parse(Console.ReadLine());
+
+for (int i = 1; i <= numRows; i++)
+{
+    for (int j = 1; j <= i; j++)
+    {
+        Console.Write("*");
+    }
+    Console.WriteLine(); // Move to the next line
+}
+
+
+string[] arr = { "abc", "zyz", "cbd", "fgh" };
+//Array.Reverse(arr);
+Array.Sort(arr);
+//Console.Write(arr);
+
+foreach (string rvrarr in arr)
+{
+    Console.WriteLine(rvrarr);
+}
